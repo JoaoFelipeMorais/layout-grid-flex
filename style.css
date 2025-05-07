@@ -117,10 +117,7 @@ section {
     gap: 20px;
 }
 
-aside {
-    grid-area: aside;
-    background-color: rgb(8, 224, 15);
-}
+
 
 .item {
     /* background-color: cyan; */
@@ -167,6 +164,68 @@ aside {
 
 .text-noticia small {
     color: #615f5f;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(8, 224, 15);
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 2fr 1fr 1fr;
+}
+
+.maisLidas-aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.maisLidas-aside h2 {
+    font-size: 30px;
+}
+
+.maisLidas-aside ul {
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.maisLidas-aside li  {
+    width: 100%;
+    height: auto;
+    height: 33%;
+}
+
+.maisLidas-aside li a {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    position: relative; 
+}
+
+.maisLidas-aside li a:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.maisLidas-aside a img {
+    width: 100%;
+    height: 100%;
+}
+
+.maisLidas-aside a h4 {
+  position: absolute;  
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo para legibilidade */
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 0;
 }
 
 footer {
