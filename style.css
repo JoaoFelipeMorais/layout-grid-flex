@@ -1,233 +1,305 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-    background-color: beige;
-    min-height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    gap: 20px;
+  background-color: beige;
+  min-height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
 }
 
 .header-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-block: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 15px;
 
-    background-color: beige;
-    box-shadow: 0px 0px 15px 5px black;
+  background-color: beige;
+  box-shadow: 0px 0px 15px 5px black;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%; /* Define que a largura total dos itens internos será 70% da largura do header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%; /* Define que a largura total dos itens internos será 70% da largura do header */
 }
 
 .title {
-    flex: 3;
+  flex: 3;
 }
 
 .title h2 {
-    font-size: 28px;
-    font-weight: 400;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 .title-link {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 header nav {
-    flex: 2;
-    /* background-color: rgb(28, 52, 52); */
+  flex: 2;
+  /* background-color: rgb(28, 52, 52); */
 }
-
 
 .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-list li:hover{
-    transition: all 0.5s;
-    transform: scale(1.1);
+.nav-list li:hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
 }
 
 .nav-link {
-    font-size: 18px;
-    color: black;
-    padding: 7px;
-    text-decoration: none;
-    border-radius: 10px;
+  font-size: 18px;
+  color: black;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .nav-link:hover {
-    background-color: black;
-    color: beige;
-    transition: all 0.5s;
+  background-color: black;
+  color: beige;
+  transition: all 0.5s;
 }
 
 /* MAIN */
 
 main {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  grid-template-areas:
     "header header"
-    "section aside"
-    ;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 20px;
-    margin-inline: 7vw;
+    "section aside";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  margin-inline: 7vw;
 }
 
 .header-main {
-    grid-area: header;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-main h1 {
-    font-size: 50px;
-    font-weight: 400;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 section {
-    grid-area: section;
-    /* background-color: green; */
-    display: grid;
-    grid-template-columns: repeat(3, 0.5fr);
-    grid-template-rows: repeat(2, 1fr);
-    
-    gap: 20px;
+  grid-area: section;
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 20px;
 }
 
-
-
 .item {
-    /* background-color: cyan; */
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-evenly;
-    text-decoration: none;
-    color: black;
+  /* background-color: cyan; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: black;
 
-    box-shadow: 0px 0px 13px -4px rgba(0,0,0,0.75);
-    border-radius: 20px;
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
 }
 
 .item:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 
 .item h4 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .item img {
-    width: 120px;
-    height: 100px;
+  width: 120px;
+  height: 100px;
 }
 
 .item hr {
-    color: #615f5f;
-    size: 2px;
-    width: 70%;
+  color: #615f5f;
+  size: 2px;
+  width: 70%;
 }
 
 .text-noticia {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .text-noticia p {
-    text-align: center;
+  text-align: center;
 }
 
 .text-noticia small {
-    color: #615f5f;
+  color: #615f5f;
 }
 
 aside {
-    grid-area: aside;
-    background-color: rgb(8, 224, 15);
-    display: grid;
-    gap: 10px;
-    grid-template-rows: 2fr 1fr 1fr;
+  /* background-color: chartreuse; */
+  grid-area: aside;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 2fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "maisLidas maisLidas"
+    "redes newsletter"; */
 }
 
 .maisLidas-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* grid-area: maisLidas; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
 .maisLidas-aside h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .maisLidas-aside ul {
-    width: 95%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  width: 95%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.maisLidas-aside li  {
-    width: 100%;
-    height: auto;
-    height: 33%;
+.maisLidas-aside li {
+  width: 100%;
+  height: auto;
+  height: 33%;
 }
 
 .maisLidas-aside li a {
-    width: 100%;
-    height: 100%;
-    display: flex; 
-    align-items: center;
-    position: relative; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .maisLidas-aside li a:hover {
-    transform: scale(1.05);
-    transition: all 0.5s;
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 
 .maisLidas-aside a img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .maisLidas-aside a h4 {
-  position: absolute;  
+  position: absolute;
   top: 10px;
   left: 10px;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo para legibilidade */
   color: #fff;
   padding: 8px 12px;
   border-radius: 4px;
   margin: 0;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 1);
 }
 
+.redes-aside {
+  /* grid-area: redes; */
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  /* border-radius: 20px;
+    box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.75); */
+}
+
+.redes-aside h2 {
+  font-size: 34px;
+}
+
+.container-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.icon-link {
+  font-size: 40px;
+  color: black;
+}
+
+.icon-link i {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.icon-link i:hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.newsletter-aside {
+  /* grid-area: newsletter; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.newsletter-aside h2 {
+  font-size: 34px;
+}
+
+.container-input {
+    display: flex;
+}
+
+.container-input input {
+  padding: 7px ;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+button {
+    padding: 10px 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
 footer {
-    background-color: rgb(240, 57, 57);
+  background-color: rgb(240, 57, 57);
 }
