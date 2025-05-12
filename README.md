@@ -17,7 +17,7 @@ Ele foi feito como prática para melhorar a organização de containers, posicio
 ## Objetivos
 
 - Treinar estruturação de páginas
-- Aprender a organizar elementos como `header`, `nav`, `main`, `aside` e `footer`
+- Aprender a organizar elementos como `header`, `nav`, `main` e `aside`
 - Praticar divisão proporcional de elementos com Flexbox e Grid
 
 Feito por [João Felipe](https://github.com/JoaoFelipeMorais)
